@@ -7,7 +7,7 @@ from urllib.request import urlopen as uReq
 app = Flask(__name__)
 
 @app.route('/',methods=['GET'])  # route to display the home page
-@cross_origin()
+@cross_origin()  # to access this program across servers
 def homePage():
     return render_template("index.html")
 
